@@ -5,10 +5,11 @@ const Renderer = function () {
     const postElement = $(`<div class="post"></div>`);
     postElement.append(`<div class="post-text">${text}</div>`);
     postElement.append(`<span class="material-icons delete md-18">delete</span>`);
-    postContainer.append(postElement)
-    postContainer.append(`<div class="comments"></div>`)
-    postContainer.append(`<input type="text" placeholder="Write your comment..." class="comment-input">`)
-    postContainer.append(`<div class="comment-btn" onclick="post()">Send</div>`)
+    postContainer.append(postElement);
+    postContainer.append(`<div class="comments"></div>`);
+    postContainer.append(`<input type="text" placeholder="Write your comment..." class="comment-input">`);
+    postContainer.append(`<div class="comment-btn">Send</div>`);
+    // postContainer.append(`<button class="hide-comments">No Comments</button>`);
     return postContainer;
   }
 

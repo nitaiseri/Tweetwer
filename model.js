@@ -4,10 +4,25 @@ const Tweeter = function () {
   let _commentIdCounter = 6;
   const _posts = [
     {
-      text: "First post!",
+      text: `First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on firstaaaaa post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!`,
       id: "p1",
       comments: [
-        { id: "c1", text: "First comment on first post!" },
+        { id: "c1", text: `First comment on first post!First comment on first post!
+        First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on firstaaaaa post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!
+      First post!First comment on first post!First comment on first post!` },
         { id: "c2", text: "Second comment on first post!!" },
         { id: "c3", text: "Third comment on first post!!!" },
       ],

@@ -3,8 +3,16 @@ const renderer = Renderer()
 
 renderer.renderPosts(tweeter.getPosts())
 
+//GIF
+$("body").on('mouseleave',"#post",  function() {
+    $("#gif").css("display", "none");
+})
 
+$("body").on('mouseenter', "#post",  function() {
+    $("#gif").css("display", "inline-block");
+})
 
+//Comment trash
 $("body").on('mouseleave',".comment",  function() {
     $(this).find(".delete-comment").css("display", "none");
 })
@@ -13,7 +21,7 @@ $("body").on('mouseenter', ".comment",  function() {
     $(this).find(".delete-comment").css("display", "inline-block");
 })
 
-
+//Post trash
 $("body").on('mouseleave',".post",  function() {
     $(this).find(".delete").css("display", "none");
 })
